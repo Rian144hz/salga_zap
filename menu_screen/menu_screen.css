@@ -1,0 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@400;500&display=swap');
+
+:root {
+  --red:       #E8440A;
+  --red-dark:  #C43008;
+  --red-light: #FFEEE5;
+  --amber:     #FFD27A;
+  --amber-text:#7A3800;
+  --cream:     #FFF8F2;
+  --cream-dark:#F5EDE3;
+  --brown:     #2C1A0E;
+  --brown-mid: #6B4535;
+  --brown-lt:  #B07050;
+  --white:     #FFFFFF;
+  --border:    #F0DDD0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--brown);
+}
+
+.cardapio {
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--cream);
+  position: relative;
+}
+
+.header {
+  background: var(--red);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-logo {
+  font-family: 'Syne', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.header-sub {
+  font-size: 12px;
+  color: rgba(255,255,255,0.7);
+}
+
+.carrinho {
+  background: var(--amber);
+  color: var(--amber-text);
+  font-family: 'Syne', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.bem_vindo {
+  background: var(--red-dark);
+  padding: 12px 20px 20px;
+}
+
+.bem_vindo_cliente {
+  font-size: 13px;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 4px;
+}
+
+.escolha_de_hoje {
+  font-family: 'Syne', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--white);
+}
