@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@400;500&display=swap');
+
+:root {
+  --red:      #E8440A;
+  --red-dark: #C43008;
+  --amber:    #FFD27A;
+  --white:    #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--red);
+}
+
+.splash {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--red) 0%, var(--red-dark) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.splash .circulo {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.splash .circulo-1 {
+  width: 400px;
+  height: 400px;
+  top: -120px;
+  right: -120px;
+}
+
+.splash .circulo-2 {
+  width: 280px;
+  height: 280px;
+  bottom: -80px;
+  left: -80px;
+}
+
+.splash .circulo-3 {
+  width: 160px;
+  height: 160px;
+  bottom: 140px;
+  right: 60px;
+}
+
+.splash .conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+  padding: 0 32px;
+}
+
+.splash .emoji {
+  font-size: 72px;
+  margin-bottom: 20px;
+  animation: bounce 1.6s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-12px); }
+}
+
+.splash .logo {
+  font-family: 'Syne', sans-serif;
+  font-size: 52px;
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: -2px;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.splash .logo span {
+  color: var(--amber);
+}
+
+.splash .tagline {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.6;
+  max-width: 260px;
+  margin-bottom: 48px;
+}
+
+.splash .btn {
+  background: var(--white);
+  color: var(--red);
+  font-family: 'Syne', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 50px;
+  padding: 16px 48px;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.splash .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.22);
+}
+
+.splash .btn:active {
+  transform: scale(0.97);
+}
+
+.splash .versao {
+  position: absolute;
+  bottom: 24px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.45);
+}
