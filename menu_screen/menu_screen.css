@@ -1,94 +1,153 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@400;500&display=swap');
 
 :root {
-  --red:       #E8440A;
-  --red-dark:  #C43008;
-  --red-light: #FFEEE5;
-  --amber:     #FFD27A;
-  --amber-text:#7A3800;
-  --cream:     #FFF8F2;
-  --cream-dark:#F5EDE3;
-  --brown:     #2C1A0E;
-  --brown-mid: #6B4535;
-  --brown-lt:  #B07050;
-  --white:     #FFFFFF;
-  --border:    #F0DDD0;
+    --red: #E8440A;
+    --red-dark: #C43008;
+    --red-light: #FFEEE5;
+    --amber: #FFD27A;
+    --amber-text: #7A3800;
+    --cream: #FFF8F2;
+    --cream-dark: #F5EDE3;
+    --brown: #2C1A0E;
+    --brown-mid: #6B4535;
+    --brown-lt: #B07050;
+    --white: #FFFFFF;
+    --border: #F0DDD0;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'DM Sans', sans-serif;
-  background: var(--cream);
-  color: var(--brown);
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--brown);
 }
 
 .cardapio {
-  max-width: 480px;
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background: var(--cream);
-  position: relative;
+    max-width: 480px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--cream);
+    position: relative;
 }
 
 .header {
-  background: var(--red);
-  padding: 16px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    background: var(--red);
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header-info {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .header-logo {
-  font-family: 'Syne', sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--white);
+    font-family: 'Syne', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--white);
 }
 
 .header-sub {
-  font-size: 12px;
-  color: rgba(255,255,255,0.7);
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .carrinho {
-  background: var(--amber);
-  color: var(--amber-text);
-  font-family: 'Syne', sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  padding: 6px 14px;
-  border-radius: 20px;
-  border: none;
-  cursor: pointer;
+    background: var(--amber);
+    color: var(--amber-text);
+    font-family: 'Syne', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
 }
 
 .bem_vindo {
-  background: var(--red-dark);
-  padding: 12px 20px 20px;
+    background: var(--red-dark);
+    padding: 12px 20px 20px;
 }
 
 .bem_vindo_cliente {
-  font-size: 13px;
-  color: rgba(255,255,255,0.8);
-  margin-bottom: 4px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 4px;
 }
 
 .escolha_de_hoje {
-  font-family: 'Syne', sans-serif;
-  font-size: 22px;
-  font-weight: 700;
+    font-family: 'Syne', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.search-bar {
+    padding-top: 10px;
+    position: relative;
+    margin-bottom: 14px;
+}
+
+.search-bar input {
+    width: 100%;
+
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    padding: 11px 16px 11px 40px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: var(--brown);
+    outline: none;
+
+}
+
+.search-bar input::placeholder {
+    color: var(--brown-lt);
+}
+
+.search-icon {
+    position: absolute;
+    left: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+
+}
+
+.button-filter-food {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-bottom: 14px;
+}
+
+.button-filter-food button {
+    position: relative;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    background: var(--white);
+    padding: 8px;
+    border: 1.5px solid var(--border);
+    border-radius: 20px;
+    white-space: nowrap;
+    cursor: pointer;
+
+}
+
+.button-filter-food button.active {
+  background: var(--red);
+  border-color: var(--red);
   color: var(--white);
 }
+
