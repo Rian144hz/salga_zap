@@ -28,14 +28,33 @@
         </div>
 
         <div class="button-filter-food">
-        <button>Todos</button>
-        <button>🔥 Fritos</button>
-        <button>🥐 Assados</button>
-        <button>🍬 Doces</button>
-        <button>🥤 Bebidas</button>
-        <button>🍲 Marmitas</button>
-        <button>🥘 Especiais da semana</button>
+            <button class="active" data-cat="todos"><b>Todos</b></button>
+            <button data-cat="fritos">🔥 <b>Fritos</b></button>
+            <button data-cat="assados">🥐 <b>Assados</b></button>
+            <button data-cat="doces">🍬 <b>Doces</b></button>
+            <button data-cat="bebidas">🥤 <b>Bebidas</b></button>
+            <button data-cat="marmitas">🍲 <b>Marmitas</b></button>
+            <button data-cat="especiais">🥘 <b>Especiais da semana</b></button>
         </div>
+        <div class="foods">
+            <div class="item" data-cat="todos">
+                <p><b>Todos os itens</b></p>
+            </div>
+        </div>
+
+        <div class="container-foods">
+            <div class="card-item">
+                <div class="card-img">🍗</div>
+                <div class="card-info">
+                    <h3 class="nome-item"><b>Coxinha de Frango</b></h3>
+                    <p class="descricao-item">Recheio cremoso de frango</p>
+                    <p class="preco-item"><b>R$ 4,00</b></p>
+                </div>
+                <div class="contador-container">
+                    <button class="btn-contador btn-ativo">−</button>
+                    <button class="btn-contador btn-ativo">+</button>
+                </div>
+            </div>
 
 </body>
 
