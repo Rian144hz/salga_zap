@@ -162,55 +162,107 @@ body {
 
 .container-foods {
     width: 100%;
-    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .card-item {
-   background-color: var(--white);
+    background-color: var(--white);
     padding: 14px;
     border: 1.5px solid var(--border);
-    border-radius: 20px;
-    display: flex; 
-    align-items: center; 
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
 }
 
 .card-img {
-    margin-top: 20px;
-    width: 70px;
-    height: 70px;
-    background-color: var(--border);
-    border-radius: 15px;
+    width: 52px;
+    height: 52px;
+    background-color: var(--red-light);
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
-    padding: 10px;
-
+    font-size: 28px;
+    flex-shrink: 0;
 }
 
 .card-info {
-    flex-grow: 1;          
-    padding: 0 20px;       
+    flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: flex-end; 
-    text-align: right;
-
+    align-items: flex-start;
+    text-align: left;
 }
 
 .nome-item {
-    font-size: 1.1rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
     font-weight: 700;
     color: var(--brown);
-    margin: 0 0 4px 0;
+    margin: 0 0 2px 0;
 }
 
 .descricao-item {
     font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
     color: var(--brown-lt);
+    margin-bottom: 4px;
 }
 
 .preco-item {
     font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
     color: var(--red);
+}
+
+.contador-container {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.btn-contador {
+    width: 30px;
+    height: 30px;
+    background: var(--red);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.btn-contador.minus {
+    background: var(--cream-dark);
+    color: var(--brown-mid);
+    border: 1.5px solid var(--border);
+}
+
+.button {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+}
+
+.finsh_button {
+    font-family: 'DM Sans', sans-serif;
+    border: 1.5px solid var(--border);
+    background: var(--red);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: var(--white);
+
 }
