@@ -235,8 +235,9 @@ body {
     font-weight: 800;
     color: var(--red);
 }
+
 .continue_button {
-margin-left: 20px;
+    margin-left: 20px;
     font-family: 'DM Sans', sans-serif;
     border: 2px solid var(--border);
     background: var(--red);
