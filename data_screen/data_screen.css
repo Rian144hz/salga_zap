@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@400;500&display=swap');
+
+:root {
+    --red: #E8440A;
+    --red-dark: #C43008;
+    --red-light: #FFEEE5;
+    --amber: #FFD27A;
+    --amber-text: #7A3800;
+    --cream: #FFF8F2;
+    --cream-dark: #F5EDE3;
+    --brown: #2C1A0E;
+    --brown-mid: #6B4535;
+    --brown-lt: #B07050;
+    --white: #FFFFFF;
+    --border: #F0DDD0;
+    --red-clean: #ffffff33;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--brown);
+}
+
+.parte_red_dados {
+    background-color: var(--red);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.botao_volta_dados {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: var(--red-clean);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.botao_volta_dados::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-left: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    transform: rotate(45deg);
+    margin-left: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dados {
+    font-family: 'DM Sans', sans-serif;
+    color: #FFFFFF;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.texto_header {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.quase_la {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--red-light);
+    font-size: 14px;
+
+}
+
+.seu_nome {
+    margin-top: 20px;
+    margin-left: 25px;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--brown-lt);
+}
+
+.card_nome_cliente input {
+    margin: 5px 5px;
+    margin-left: 20px;
+    width: 90%;
+    padding: 20px 25px 20px 25px;
+    border: 2px solid var(--border);
+    border-radius: 15px;
+    color: var(--brown-lt);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    outline: none;
+
+}
+
+.seu_zap {
+    margin-top: 20px;
+    margin-left: 25px;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--brown-lt);
+}
+
+.card_zap_cliente input {
+    margin: 5px 5px;
+    margin-left: 20px;
+    width: 90%;
+    padding: 20px 25px 20px 25px;
+    border: 2px solid var(--border);
+    border-radius: 15px;
+    color: var(--brown-lt);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    outline: none;
+
+}
+
+.tipo_entrega {
+    margin-top: 20px;
+    margin-left: 25px;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--brown-lt);
+
+}
+
+.opcao-entrega-container {
+    display: flex;
+    gap: 16px;
+    margin: 12px 16px;
+}
+
+.card-opcao {
+    position: relative;
+    flex: 1;
+    background-color: var(--white);
+    border: 2px solid var(--border);
+    border-radius: 16px;
+    padding: 20px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.opcao-texto {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--brown-mid);
+}
+
+.card-opcao.ativo {
+    background-color: var(--red-light);
+    border-color: var(--red);
+}
+
+.card-opcao.ativo .opcao-texto {
+    color: var(--brown);
+}
+
+.card-opcao .icone-check {
+    display: none;
+}
+
+.card-opcao.ativo .icone-check {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.forma_pagamento {
+    margin-top: 20px;
+    margin-left: 25px;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--brown-lt);
+}
+
+.opcao-pagamento-container {
+    display: flex;
+    gap: 16px;
+    margin: 12px 16px;
+}
+
+.troco {
+    margin-top: 20px;
+    margin-left: 25px;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--brown-lt);
+}
+
+.card_troco_cliente input {
+    margin: 5px 5px;
+    margin-left: 20px;
+    width: 90%;
+    padding: 20px 25px 20px 25px;
+    border: 2px solid var(--border);
+    border-radius: 15px;
+    color: var(--brown-lt);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    outline: none;
+}
+
+.revisar_pedido {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: 'DM Sans', sans-serif;
+    border: 2px solid var(--border);
+    background: var(--red);
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: var(--white);
+    width: 90%;
+
+
+}
