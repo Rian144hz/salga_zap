@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@400;500&display=swap');
+
+:root {
+    --red: #E8440A;
+    --red-dark: #C43008;
+    --red-light: #FFEEE5;
+    --amber: #FFD27A;
+    --amber-text: #7A3800;
+    --cream: #FFF8F2;
+    --cream-dark: #F5EDE3;
+    --brown: #2C1A0E;
+    --brown-mid: #6B4535;
+    --brown-lt: #B07050;
+    --white: #FFFFFF;
+    --border: #F0DDD0;
+    --red-clean: #ffffff33;
+    --red-bg-gradient: radial-gradient(circle, lab(57.84% 48.71 51.13) 0%, #e86a3c 70%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--brown);
+}
+
+.pedido_pronto_red {
+    background-color: var(--red);
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+}
+
+.bola_red_suave {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: #f2551d;
+    font-size: 60px;
+}
+
+.pedido_pronto h2 {
+    margin-top: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+
+}
+
+.agradecimento p {
+    margin-top: 20px;
+    font-size: 14px;
+    white-space: nowrap;
+    color: white;
+    text-align: center;
+    width: 100%;
+
+}
+
+.card-pedido {
+    background-color: var(--white);
+    border: 2px solid var(--border);
+    border-radius: 20px;
+    margin: 16px;
+    overflow: hidden;
+}
+
+.card-pedido-topo {
+    background-color: var(--cream-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+}
+
+.pedido-titulo {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--brown-lt);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.pedido-numero {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--red);
+}
+
+.card-pedido-corpo {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px 24px;
+}
+
+.pedido-item-linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-nome {
+    font-size: 16px;
+    color: var(--brown);
+    font-weight: 500;
+}
+
+.item-preco {
+    font-size: 16px;
+    color: var(--brown);
+    font-weight: 800;
+}
+
+.informacoes {
+    margin: 10px;
+    color: var(--brown-lt);
+
+}
+
+.info_card {
+    background-color: var(--white);
+    border: 2px solid var(--border);
+    border-radius: 20px;
+    margin: 16px;
+    overflow: hidden;
+}
+
+.nome_cliente_pedido {
+    margin: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    gap: 30px;
+}
+
+.card_total_pedido {
+    margin: 10px;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #FFEFE5;
+    border-radius: 8px;
+}
+
+.card_total_pedido p {
+    color: black;
+    font-size: 20px;
+}
+
+.preco_total p {
+    color: var(--red);
+}
+
+.button_zap {
+    margin-left: 20px;
+    background: #25D366;
+    padding: 20px;
+    border-radius: 30px;
+    width: 90%;
+
+}
+
+.button_zap p {
+    font-family: 'DM Sans', sans-serif;
+    margin-left: 50px;
+    font-size: 18px;
+    color: var(--white);
+}
+
+.button_comprar_again {
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: 2px solid var(--border);
+    background: #FFF8F2;
+    padding: 15px;
+    border-radius: 30px;
+    width: 90%;
+
+}
+
+.button_comprar_again p {
+    text-decoration: none !important;
+    border-bottom: none !important;
+    outline: none;
+    font-family: 'DM Sans', sans-serif;
+    margin-left: 70px;
+    font-size: 18px;
+    color: #6B4535
+}

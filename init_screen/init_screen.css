@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@400;500&display=swap');
 
 :root {
-  --red:      #E8440A;
+  --red: #E8440A;
   --red-dark: #C43008;
-  --amber:    #FFD27A;
-  --white:    #FFFFFF;
+  --amber: #FFD27A;
+  --white: #FFFFFF;
 }
 
 * {
@@ -73,8 +73,15 @@ body {
 }
 
 @keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50%       { transform: translateY(-12px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
 }
 
 .splash .logo {
@@ -100,6 +107,9 @@ body {
 }
 
 .splash .btn {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  outline: none;
   background: var(--white);
   color: var(--red);
   font-family: 'Syne', sans-serif;
