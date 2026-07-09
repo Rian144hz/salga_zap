@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@400;500&display=swap');
+
+:root {
+    --red: #E8440A;
+    --red-dark: #C43008;
+    --red-light: #FFEEE5;
+    --amber: #FFD27A;
+    --amber-text: #7A3800;
+    --cream: #FFF8F2;
+    --cream-dark: #F5EDE3;
+    --brown: #2C1A0E;
+    --brown-mid: #6B4535;
+    --brown-lt: #B07050;
+    --white: #FFFFFF;
+    --border: #F0DDD0;
+    --red-clean: #ffffff33;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--brown);
+}
+
+.parte_red_dados_cartao {
+    background-color: var(--red);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.botao_volta_dados_cartao {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: var(--red-clean);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.botao_volta_dados_cartao::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-left: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    transform: rotate(45deg);
+    margin-left: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dados_cartao {
+    font-family: 'DM Sans', sans-serif;
+    color: #FFFFFF;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.texto_header {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.informe_abaixo {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--red-light);
+    font-size: 14px;
+
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.texto_maquininha {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px;
+}
+
+
+.card_pagamento_na_maquininha {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffefe5;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid var(--border);
+
+}
+
+.texto_header_cartoes {
+    display: flex;
+    flex-direction: column;
+}
+
+.texto_header_cartoes b {
+    color: #b07050;
+}
+
+.card_bandeiras_aceitas {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid var(--border);
+}
+
+.bandeiras_linha {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.card_visa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffefe5;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid var(--border);
+    width: 30%;
+}
+
+.card_visa b {
+    margin-left: 0px;
+}
+
+.prosseguir_pagamento {
+    margin-top: 200px;
+    margin-left: 20px;
+    font-family: 'DM Sans', sans-serif;
+    border: 2px solid var(--border);
+    background: var(--red);
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 18px;
+    color: var(--white);
+    width: 90%;
+
+
+}
