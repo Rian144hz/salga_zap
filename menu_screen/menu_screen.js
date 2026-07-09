@@ -35,6 +35,24 @@ document.addEventListener("DOMContentLoaded", () => {
         'especiais': 'Especiais da semana'
     };
 
+    
+    function carregarDoLocalStorage() {
+        const salvo = localStorage.getItem('carrinhoSalgaZap');
+        if (!salvo) return;
+
+        const dadosSalvos = JSON.parse(salvo);
+        for (let nome in dadosSalvos) {
+            if (produtos[nome]) {
+                produtos[nome].qtd = dadosSalvos[nome].qtd || 0;
+            }
+        }
+    }
+
+    
+    function salvarNoLocalStorage() {
+        localStorage.setItem('carrinhoSalgaZap', JSON.stringify(produtos));
+    }
+
     function aplicarFiltros() {
         let itensVisiveis = 0;
 
@@ -83,6 +101,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    
+    carregarDoLocalStorage();
+
     containersSalgados.forEach(container => {
         const card = container.querySelector('.card-item');
         if (!card) return;
@@ -93,7 +114,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const spanQtd = document.createElement('span');
         spanQtd.className = 'qtd-numero';
-        spanQtd.innerText = '0';
+        // <<< MUDANÇA: começa exibindo a quantidade já salva (não sempre '0')
+        spanQtd.innerText = produtos[nomeItem] ? produtos[nomeItem].qtd : 0;
         spanQtd.style.margin = '0 10px';
         spanQtd.style.fontWeight = 'bold';
         container.querySelector('.contador-container').insertBefore(spanQtd, btnMais);
@@ -103,6 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 produtos[nomeItem].qtd++;
                 spanQtd.innerText = produtos[nomeItem].qtd;
                 atualizarTotais();
+                salvarNoLocalStorage(); 
             }
         });
 
@@ -111,6 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 produtos[nomeItem].qtd--;
                 spanQtd.innerText = produtos[nomeItem].qtd;
                 atualizarTotais();
+                salvarNoLocalStorage(); 
             }
         });
     });
