@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salga-Zap · Dados do endereço</title>
     <link rel="stylesheet" href="endereco.css">
 </head>
+
 <body>
-<div class="parte_red_dados_entrega">
+    <div class="parte_red_dados_entrega">
         <a href="../data_screen/data_screen.html" style="text-decoration: none; color: inherit; display: block;">
             <div class="botao_volta_dados_entrega"></div>
         </a>
@@ -18,22 +20,89 @@
     </div>
 
     <div class="card_taxa">
-    <b>🛵  Taxa de entrega fixa: R$ 7,00</b>
-    </div>
-    
-    
-    <div class="card_cep">
-    <b>📮  CEP</b>
-    </div>
-    <div class="card_cep_input">
-    <input type="number" placeholder="48620-000" />
+        <b>🛵 Taxa de entrega fixa: R$ 7,00</b>
     </div>
 
-     <div class="card_avenida">
-    <b>🏠  RUA / AVENIDA</b>
+
+    <div class="card_cep">
+        <b>📮 CEP</b>
+    </div>
+    <div class="card_cep_input">
+        <input type="number" placeholder="48620-000" />
+    </div>
+
+    <div class="card_avenida">
+        <b>🏠 RUA / AVENIDA</b>
     </div>
     <div class="card_avenida_input">
-    <input type="text" placeholder="Rua fulano" />
+        <input type="text" placeholder="Rua fulano" />
     </div>
+
+    <div class="form-row">
+
+        <div class="card_numero">
+            <b>🔢 NÚMERO</b>
+            <div class="card_numero_input">
+                <input type="number" placeholder="123">
+            </div>
+        </div>
+
+        <div class="card_complemento">
+            <b>🚪 COMPLEMENTO</b>
+            <div class="card_complemento_input">
+                <input type="text" placeholder="Ex: apto 2">
+            </div>
+        </div>
+    </div>
+
+    <div class="card_bairro">
+        <b>🏘️ BAIRRO</b>
+    </div>
+    <div class="card_bairro_input">
+        <input type="text" placeholder="Ex: Centro" />
+    </div>
+
+    <div class="form-row">
+        <div class="card_cidade">
+            <b>🌆 CIDADE</b>
+            <div class="card_cidade_input">
+                <input type="text" placeholder="Ex: Feira de Santana" />
+            </div>
+        </div>
+        <div class="card_estado">
+            <b>🗺️ ESTADO</b>
+            <div class="card_estado_input">
+                <input type="text" placeholder="BA" maxlength="2" />
+            </div>
+        </div>
+    </div>
+
+    <div class="card_referencia">
+        <b>📌 PONTO DE REFERÊNCIA</b>
+    </div>
+    <div class="card_referencia_input">
+        <input type="text" placeholder="Ex: Próximo ao mercado..." />
+    </div>
+
+    <div class="resumo">
+        <div class="resumo-row">
+            <span>Subtotal do pedido</span>
+            <span id="subtotal">R$ 0,00</span>
+        </div>
+        <div class="resumo-row">
+            <span>Taxa de entrega</span>
+            <span class="taxa">R$ 7,00</span>
+        </div>
+        <div class="resumo-total">
+            <span>Total</span>
+            <span class="total-valor" id="total">R$ 7,00</span>
+        </div>
+    </div>
+
+    <div class="rodape">
+        <button class="btn-confirmar" onclick="confirmarEndereco()">Confirmar Endereço →</button>
+    </div>
+
 </body>
+
 </html>

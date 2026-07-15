@@ -103,7 +103,7 @@ body {
 }
 
 .card_cep_input input {
-margin-bottom: 20px;
+    margin-bottom: 20px;
     margin-top: 8px;
     margin-left: 20px;
     width: 90%;
@@ -134,5 +134,212 @@ margin-bottom: 20px;
     font-family: 'DM Sans', sans-serif;
     font-size: 17px;
     outline: none;
+    margin-bottom: 15px;
 
+}
+
+.card_numero b {
+    margin-left: 22px;
+    color: #B07050;
+}
+
+.card_complemento b {
+    margin-left: 22px;
+    color: #B07050;
+}
+
+.card_numero_input input {
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 80%;
+    padding: 10px;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    color: var(--brown-lt);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    outline: none;
+
+}
+
+.form-row {
+    display: flex;
+    gap: 16px;
+}
+
+.card_numero,
+.card_complemento {
+    flex: 1;
+}
+
+.card_numero_input input {
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 80%;
+    padding: 10px;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    color: var(--brown-lt);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    outline: none;
+
+}
+
+
+.card_complemento_input input {
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 80%;
+    padding: 10px;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    color: var(--brown-lt);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    outline: none;
+
+}
+
+.card_bairro b {
+    margin-left: 22px;
+    color: #B07050;
+}
+
+.card_bairro_input input {
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 90%;
+    padding: 10px;
+    border: 2px solid var(--border);
+    border-radius: 15px;
+    color: var(--brown-lt);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+.card_cidade b,
+.card_estado b {
+    margin-left: 22px;
+    color: #B07050;
+}
+
+.card_cidade,
+.card_estado {
+    flex: 1;
+}
+
+.card_cidade_input input {
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 80%;
+    padding: 10px;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    color: var(--brown-lt);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+.card_estado_input input {
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 80%;
+    padding: 10px;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    color: var(--brown-lt);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+.card_referencia b {
+    margin-left: 22px;
+    color: #B07050;
+}
+
+.card_referencia_input input {
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 90%;
+    padding: 10px;
+    border: 2px solid var(--border);
+    border-radius: 15px;
+    color: var(--brown-lt);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.resumo {
+    margin: 0 20px;
+    background: var(--white);
+    border: 2px solid var(--border);
+    border-radius: 15px;
+    padding: 14px 16px;
+}
+
+.resumo-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: var(--brown-mid);
+    padding: 5px 0;
+}
+
+.taxa {
+    font-weight: 700;
+    color: var(--red);
+}
+
+.resumo-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px dashed var(--border);
+    margin-top: 8px;
+    padding-top: 10px;
+}
+
+.resumo-total span:first-child {
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--brown);
+}
+
+.total-valor {
+    font-family: 'Syne', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--red);
+}
+
+.rodape {
+    padding: 16px 20px 32px;
+}
+
+.btn-confirmar {
+    width: 100%;
+    background: var(--red);
+    color: var(--white);
+    font-family: 'Syne', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    padding: 16px;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.btn-confirmar:hover {
+    background: var(--red-dark);
 }
