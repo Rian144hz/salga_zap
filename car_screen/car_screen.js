@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "PF completo": "🥡"
     };
 
-    // Converte "4,00" ou 4.00 ou "4.00" em número 4.00 com segurança
+    
     function paraNumero(valor) {
         if (typeof valor === 'number') return valor;
         if (typeof valor === 'string') {
@@ -44,8 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 };
             }
         } else {
-            // ⚠️ FALLBACK TEMPORÁRIO — remova este bloco quando a tela de
-            // menu_screen já estiver salvando o carrinho de verdade.
             produtos = {
                 "Coxinha de Frango": { preco: 4.00, qtd: 2 },
                 "Kibe frito": { preco: 3.50, qtd: 1 }

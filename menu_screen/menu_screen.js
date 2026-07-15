@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const spanQtd = document.createElement('span');
         spanQtd.className = 'qtd-numero';
-        // <<< MUDANÇA: começa exibindo a quantidade já salva (não sempre '0')
+       
         spanQtd.innerText = produtos[nomeItem] ? produtos[nomeItem].qtd : 0;
         spanQtd.style.margin = '0 10px';
         spanQtd.style.fontWeight = 'bold';
