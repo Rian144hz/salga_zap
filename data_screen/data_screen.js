@@ -116,18 +116,20 @@ document.addEventListener("DOMContentLoaded", () => {
         card.addEventListener('click', () => {
             cardsPagamento.forEach(c => c.classList.remove('ativo'));
             card.classList.add('ativo');
-            formaPagamento = card.querySelector('.opcao_texto_pix').innerText.trim();
+            formaPagamento = card.querySelector('span').innerText.trim();
             atualizarVisibilidade();
         });
     });
 
     function salvarDadosPedido() {
+        const dadosAntigos = JSON.parse(localStorage.getItem('dadosPedidoSalgaZap') || '{}');
         const dados = {
             nome: inputNome.value.trim(),
             whatsapp: inputZap.value.trim(),
             tipoEntrega: tipoEntrega,
             formaPagamento: formaPagamento,
-            troco: inputTroco.value.trim()
+            troco: inputTroco.value.trim(),
+            observacoes: dadosAntigos.observacoes || ''
         };
         localStorage.setItem('dadosPedidoSalgaZap', JSON.stringify(dados));
     }

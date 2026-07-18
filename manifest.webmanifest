@@ -1,0 +1,18 @@
+{
+  "name": "Salga-Zap · Pedidos via WhatsApp",
+  "short_name": "Salga-Zap",
+  "description": "Monte seu pedido de salgados e envie direto no WhatsApp da Dona Sônia.",
+  "start_url": "init_screen/init_screen.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#E8440A",
+  "theme_color": "#E8440A",
+  "lang": "pt-BR",
+  "categories": ["food", "shopping"],
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

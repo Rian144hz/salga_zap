@@ -152,6 +152,17 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem('carrinhoSalgaZap', JSON.stringify(atual));
     }
 
+    const inputObs = document.querySelector('.observacoes input');
+    if (inputObs) {
+        const dadosAntigos = JSON.parse(localStorage.getItem('dadosPedidoSalgaZap') || '{}');
+        if (dadosAntigos.observacoes) inputObs.value = dadosAntigos.observacoes;
+        inputObs.addEventListener('input', () => {
+            const d = JSON.parse(localStorage.getItem('dadosPedidoSalgaZap') || '{}');
+            d.observacoes = inputObs.value.trim();
+            localStorage.setItem('dadosPedidoSalgaZap', JSON.stringify(d));
+        });
+    }
+
     window.addEventListener('pageshow', carregarCarrinho);
     carregarCarrinho();
 });
