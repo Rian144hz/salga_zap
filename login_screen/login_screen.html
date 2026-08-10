@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salga-Zap · Login</title>
+    <link rel="stylesheet" href="login_screen.css">
+</head>
+
+<body>
+    <div class="login">
+        <div class="topo">
+            <div class="emoji">🥟</div>
+            <h1 class="logo">Salga-Zap</h1>
+            <p class="subtitulo">Bem-vindo(a) de volta! 👋</p>
+            <button class="botao-loja">Salgadeira da Dona Sônia</button>
+        </div>
+
+        <div class="corpo">
+            <h2 class="titulo">Entre na sua conta</h2>
+            <p class="subtitulo-corpo">Preencha seus dados para continuar</p>
+
+            <label class="rotulo" for="nome">SEU NOME</label>
+            <input id="nome" type="text" placeholder="Ex: Maria Silva" />
+
+            <label class="rotulo" for="whats">WHATSAPP</label>
+            <input id="whats" type="tel" placeholder="(71) 9 9999-9999" />
+
+            <div class="check">
+                <input id="aceito" type="checkbox" checked />
+                <label for="aceito">Aceito receber pedidos pelo WhatsApp</label>
+            </div>
+
+            <button id="entrar" class="botao-entrar">
+                <span class="w">W</span> Entrar e Ver Cardápio →
+            </button>
+
+            <a href="../menu_screen/menu_screen.html" class="entrar-sem">Entrar sem identificação →</a>
+        </div>
+    </div>
+
+    <script src="login_screen.js"></script>
+</body>
+
+</html>
