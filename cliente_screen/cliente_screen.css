@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', Arial, sans-serif;
+    background: #FFF8F2;
+    color: #2C1A0E;
+}
+
+.area {
+    max-width: 480px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #FFF8F2;
+}
+
+.topo {
+    background: linear-gradient(135deg, #E8440A 0%, #C43008 100%);
+    padding: 40px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.topo .emoji {
+    font-size: 48px;
+    margin-bottom: 8px;
+}
+
+.topo .logo {
+    font-family: 'Syne', 'DM Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    color: #FFFFFF;
+}
+
+.corpo {
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    background: #FFFFFF;
+    border: 2px solid #F0DDD0;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.rotulo {
+    font-size: 12px;
+    font-weight: 700;
+    color: #6B4535;
+    margin-top: 14px;
+}
+
+.rotulo:first-child {
+    margin-top: 0;
+}
+
+.valor {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2C1A0E;
+}
+
+.valor.verde {
+    color: #25D366;
+}
+
+.botao {
+    margin-top: 16px;
+    width: 100%;
+    background: #E8440A;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 24px;
+    padding: 16px;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+.botao.sair {
+    background: #F5EDE3;
+    color: #6B4535;
+    border: 2px solid #F0DDD0;
+}
+
+@media (max-width: 480px) {
+    .topo { padding: 32px 16px 24px; }
+    .topo .logo { font-size: 26px; }
+    .corpo { padding: 24px 16px; }
+}

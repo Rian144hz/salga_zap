@@ -74,6 +74,15 @@ body {
     cursor: pointer;
 }
 
+.conta {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: underline;
+}
+
 .bem_vindo {
     background: var(--red-dark);
     padding: 12px 20px 20px;
