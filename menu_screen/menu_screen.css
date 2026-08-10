@@ -77,10 +77,16 @@ body {
 .conta {
     display: inline-block;
     margin-top: 8px;
+    font-family: 'Syne', sans-serif;
     font-size: 12px;
     font-weight: 700;
-    color: rgba(255, 255, 255, 0.9);
-    text-decoration: underline;
+    background: var(--amber);
+    color: var(--amber-text);
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .bem_vindo {
