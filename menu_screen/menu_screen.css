@@ -270,3 +270,40 @@ margin-left: 20px;
 
 
 }
+
+
+
+@media (max-width: 480px) {
+  body { font-size: 15px; }
+  .cardapio, .parte_red, .parte_red_dados, .splash { padding-left: 6px; padding-right: 6px; }
+  .header, .bem_vindo, .search-bar, .button-filter-food {
+    padding-left: 10px; padding-right: 10px;
+  }
+  .card-item { padding: 10px; gap: 8px; margin: 6px 6px; }
+  .card-img { width: 46px; height: 46px; font-size: 24px; }
+  .nome-item { font-size: 15px; }
+  .descricao-item { font-size: 13px; }
+  .search-bar input { padding-left: 38px; font-size: 14px; }
+  .escolha_de_hoje { font-size: 20px; }
+  .logo { font-size: 44px; }
+  .finsh_button, .continue_button, .revisar_pedido, .button_zap, .button_comprar_again {
+    width: 92%; margin-left: 4%; font-size: 16px;
+  }
+  .card_nome_cliente input, .card_zap_cliente input, .card_troco_cliente input, .observacoes input {
+    width: 92%; margin-left: 4%;
+  }
+  .opcao-entrega-container, .opcao-pagamento-container { gap: 10px; margin: 10px; }
+  .card-opcao { padding: 14px 8px; }
+  .resumo-card, .card-pedido, .info_card { margin: 10px; }
+  .pedido_pronto_red { padding: 40px 14px; }
+}
+
+
+@media (max-width: 360px) {
+  body { font-size: 14px; }
+  .escolha_de_hoje { font-size: 18px; }
+  .card-img { width: 40px; height: 40px; font-size: 20px; }
+  .finsh_button, .continue_button, .revisar_pedido, .button_zap, .button_comprar_again {
+    width: 96%; margin-left: 2%; font-size: 15px;
+  }
+}
