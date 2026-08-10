@@ -1,4 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
+    const saudacao = document.querySelector('.bem_vindo_cliente');
+    if (saudacao) {
+        const usuario = JSON.parse(localStorage.getItem('usuarioSalgaZap') || 'null');
+        if (usuario && usuario.nome) {
+            saudacao.innerText = 'Olá, ' + usuario.nome + '! 👋';
+        }
+    }
+
     const botoesFiltro = document.querySelectorAll('.button-filter-food button');
     const containersSalgados = document.querySelectorAll('.container-foods');
     const barraPesquisa = document.querySelector('.search-bar input');
